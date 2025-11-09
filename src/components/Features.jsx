@@ -63,7 +63,7 @@ export default function Features() {
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
           {featureBlocks.map(block => (
-            <div key={block.id} className="rounded-2xl border border-amber-200 dark:border-white/10 p-6 shadow-sm bg-white dark:bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/40">
+            <div key={block.id} className="rounded-2xl border border-indigo-200/50 dark:border-white/10 p-6 shadow-sm bg-white/80 dark:bg-white/5 backdrop-blur supports-[backdrop-filter]:bg-white/10">
               <div className="flex items-center justify-between gap-4">
                 <div>
                   <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">{block.title}</h3>
@@ -74,7 +74,7 @@ export default function Features() {
               <ul className="mt-5 space-y-3">
                 {block.bullets.map((b, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <div className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-md bg-amber-100 text-amber-700 dark:bg-amber-500/10 dark:text-amber-400">
+                    <div className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-md bg-indigo-100 text-indigo-700 dark:bg-indigo-500/10 dark:text-indigo-300">
                       <b.icon size={18} />
                     </div>
                     <span className="text-neutral-700 dark:text-neutral-300">{b.text}</span>
@@ -85,7 +85,7 @@ export default function Features() {
               {block.metrics && (
                 <div className="mt-6 flex flex-wrap gap-2">
                   {block.metrics.map((m, i) => (
-                    <span key={i} className="rounded-full bg-amber-50 px-3 py-1 text-sm text-amber-700 ring-1 ring-amber-200 dark:bg-amber-500/10 dark:text-amber-400 dark:ring-white/10">
+                    <span key={i} className="rounded-full bg-indigo-50 px-3 py-1 text-sm text-indigo-700 ring-1 ring-indigo-200 dark:bg-indigo-500/10 dark:text-indigo-300 dark:ring-white/10">
                       {m.label}
                     </span>
                   ))}

@@ -6,7 +6,7 @@ export default function Hero() {
     <header className="relative min-h-[88vh] w-full overflow-hidden bg-black text-white">
       {/* Spline background */}
       <div className="absolute inset-0">
-        <Spline scene="https://prod.spline.design/vc19ejtcC5VJjy5v/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/4cHQr84zOGAHOehh/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       {/* Content overlay */}
@@ -19,11 +19,11 @@ export default function Hero() {
           <h1 className="mt-6 font-semibold leading-tight text-white text-4xl sm:text-5xl md:text-6xl">
             FlowSense
           </h1>
-          <p className="mt-4 text-lg text-white/80">
+          <p className="mt-4 text-lg text-white/85">
             Real-time situational awareness and intelligent decision-making for safer, smoother visitor experiences across the Kingdom.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <a href="#features" className="inline-flex items-center justify-center gap-2 rounded-lg bg-amber-400 px-5 py-3 font-medium text-black shadow transition hover:bg-amber-300">
+            <a href="#features" className="inline-flex items-center justify-center gap-2 rounded-lg px-5 py-3 font-medium text-white shadow transition bg-gradient-to-r from-indigo-600 via-purple-600 to-cyan-400 hover:brightness-110">
               Explore Features
               <ArrowRight size={18} />
             </a>
@@ -38,15 +38,15 @@ export default function Hero() {
             <img
               src="https://raw.githubusercontent.com/Skayyz/Videos/main/FlowSense.svg"
               alt="FlowSense Logo"
-              className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_0_40px_rgba(251,191,36,0.45)]"
+              className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_0_40px_rgba(99,102,241,0.5)]"
             />
-            <div className="absolute -inset-6 rounded-full bg-amber-400/10 blur-3xl" aria-hidden />
+            <div className="absolute -inset-6 rounded-full bg-gradient-to-r from-indigo-600/20 via-purple-600/20 to-cyan-400/20 blur-3xl" aria-hidden />
           </div>
         </div>
       </div>
 
       {/* Gradient overlay to ensure text contrast without blocking spline interactions */}
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-black/90" />
+      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/70 via-black/20 to-black/90" />
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-black/70 to-transparent" />
     </header>
   );
