@@ -54,30 +54,30 @@ const featureBlocks = [
 
 export default function Features() {
   return (
-    <section id="features" className="bg-white">
+    <section id="features" className="bg-white dark:bg-black">
       <div className="mx-auto max-w-6xl px-6 py-20">
-        <h2 className="text-3xl font-semibold text-emerald-900 sm:text-4xl">Features</h2>
-        <p className="mt-2 max-w-2xl text-emerald-800/90">
+        <h2 className="text-3xl font-semibold text-neutral-900 dark:text-white sm:text-4xl">Features</h2>
+        <p className="mt-2 max-w-2xl text-neutral-700 dark:text-neutral-300">
           Tools for organizers, authorities, and venue teams — designed for safety, speed, and simplicity.
         </p>
 
         <div className="mt-10 grid gap-8 lg:grid-cols-2">
           {featureBlocks.map(block => (
-            <div key={block.id} className="rounded-2xl border border-emerald-200 p-6 shadow-sm">
+            <div key={block.id} className="rounded-2xl border border-amber-200 dark:border-white/10 p-6 shadow-sm bg-white dark:bg-black/60 backdrop-blur supports-[backdrop-filter]:bg-black/40">
               <div className="flex items-center justify-between gap-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-emerald-900">{block.title}</h3>
-                  <p className="mt-1 text-emerald-800/90">{block.subtitle}</p>
+                  <h3 className="text-xl font-semibold text-neutral-900 dark:text-white">{block.title}</h3>
+                  <p className="mt-1 text-neutral-700 dark:text-neutral-300">{block.subtitle}</p>
                 </div>
               </div>
 
               <ul className="mt-5 space-y-3">
                 {block.bullets.map((b, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <div className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-md bg-emerald-100 text-emerald-700">
+                    <div className="mt-0.5 flex h-8 w-8 items-center justify-center rounded-md bg-amber-100 text-amber-700 dark:bg-amber-500/10 dark:text-amber-400">
                       <b.icon size={18} />
                     </div>
-                    <span className="text-emerald-800/90">{b.text}</span>
+                    <span className="text-neutral-700 dark:text-neutral-300">{b.text}</span>
                   </li>
                 ))}
               </ul>
@@ -85,7 +85,7 @@ export default function Features() {
               {block.metrics && (
                 <div className="mt-6 flex flex-wrap gap-2">
                   {block.metrics.map((m, i) => (
-                    <span key={i} className="rounded-full bg-emerald-50 px-3 py-1 text-sm text-emerald-700 ring-1 ring-emerald-200">
+                    <span key={i} className="rounded-full bg-amber-50 px-3 py-1 text-sm text-amber-700 ring-1 ring-amber-200 dark:bg-amber-500/10 dark:text-amber-400 dark:ring-white/10">
                       {m.label}
                     </span>
                   ))}
